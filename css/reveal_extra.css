@@ -1,0 +1,14 @@
+.reveal p {
+	font-size: 0.8em;
+}
+
+.reveal blockquote {
+	font-size: 0.8em;
+
+	border: 2px solid black;
+	padding: 2%;
+}
+
+.reveal em {
+	text-decoration: underline;
+}

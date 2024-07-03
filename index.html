@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Y7 - ICT - NISA</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="css/reveal_extra.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script src="plugin/math/math.js"></script>
+
+		<!-- Font awesome is required for the chalkboard plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Custom controls plugin is used to for opening and closing annotation modes. -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+<!-- Chalkboard plugin -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>ICT - Year 7</h1>
+					<h6>Chapter 1: Storing Digital Data</h6>
+					<h6 id="datetime"></h6>
+					<img src="images/nisa_logo.png"></img>
+					<h6>Naypyitaw International Science Academy</h6>
+				</section>
+				<section data-markdown>
+					### 1.5 Digital Text and Numbers
+					
+					##### How do computers recognize text and numbers?
+
+					* Any computer can understand only binary numbers
+					* This means that even the letters of the alphabet have to be a binary number to make sense to the computer
+					* **ASCII** is a widely used system to convert the alphabet (and numerals) to binary numbers.
+				</section>
+				<section data-markdown>
+					### 1.5 Digital Text and Numbers
+					
+					##### What is ASCII?
+					* **ASCII** (American Standard Code for Information Interchange) is a system that computers use to represent text.
+					* Each letter, number, and symbol on your keyboard has its own special number in the ASCII code.
+				</section>
+				<section data-markdown>
+					### 1.5 Digital Text and Numbers
+					* For example:
+						* The letter 'A' is represented by the number 65.
+						* The letter 'a' is represented by the number 97.
+						* The number '1' is represented by the number 49.
+					* The **standard ASCII** system includes 128 codes, ranging from 0 to 127. 
+					* There is also an **extended ASCII** system that includes 256 codes.
+					* These codes include letters, numbers, punctuation marks, and control characters (like newline)
+				</section>
+				<section data-markdown>
+					### 1.5 Digital Text and Numbers
+					* Each ASCII character is represented in binary (base 2) inside the computer. For example, the letter 'A' (65 in decimal) is 01000001 in binary.
+					* The problem with ASCII is that there are only 256 characters
+					* This is because ASCII was originally created to deal with English
+					* An improved code called **Unicode** was invented in 1991 to deal with other languages
+
+					Homework: What is different in how ASCII and Unicode store characters? 
+				</section>
+				<section>
+					<h3>1.5 Digital Text and Numbers</h3>
+					<h5>Some particular ASCII Codes</h5>
+					<img src="images/ascii_1.png"></img>
+				</section>
+				<section>
+					<h3>1.5 Digital Text and Numbers</h3>
+					<h5>Some particular ASCII Codes</h5>
+					<img src="images/ascii_2.png"></img>
+				</section>
+				<section data-markdown>
+					### 1.5 Digital Text and Numbers
+
+					In total, there are 256 ASCII characters, and can be broadly divided into three categories:
+
+					* **ASCII control characters:** 0-31 and 127
+					* **ASCII printable characters:** 32-126
+					* **Extended ASCII characters:** 128-255
+
+					**Example:** 127 is the DEL (delete) control character.
+
+					**Example:** 128 is an extended ASCII character and represents the Euro sign €
+
+					**Homework:** What is the binary ASCII code for the Euro sign €?
+
+				</section>
+				<section data-markdown>
+					### 1.5 Digital Text and Numbers
+					* ASCII value of uppercase alphabets – 65 to 90.
+					* ASCII value of lowercase alphabets – 97 to 122.
+					* ASCII value of digits - 48 to 57
+				</section>
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				width: 1240,
+  				height: 760,
+				margin: 0.04,
+				hash: true,
+				 customcontrols: {
+    controls: [
+      { icon: '<i class="fa fa-pen-square"></i>',
+        title: 'Toggle chalkboard (B)',
+        action: 'RevealChalkboard.toggleChalkboard();'
+      },
+      { icon: '<i class="fa fa-pen"></i>',
+        title: 'Toggle notes canvas (C)',
+        action: 'RevealChalkboard.toggleNotesCanvas();'
+      }
+    ]
+  },
+plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+			});
+		</script>
+		<script>
+			document.getElementById("datetime").innerHTML = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
+		</script>
+	</body>
+</html>
