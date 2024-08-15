@@ -16,3 +16,7 @@
 .reveal em {
 	text-decoration: underline;
 }
+
+.reveal code {
+	user-select:none;
+}
