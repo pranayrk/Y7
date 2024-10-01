@@ -4,17 +4,193 @@
 	<img src="images/nisa_logo.png"></img>
 	<h6>Naypyitaw International Science Academy</h6>
 </section>
-<section data-markdown>
-	### What is Python?
+<section>
+	<p><b>What is an algorithm?</b></p>
+	<ul>
+		<li class="fragment">An <b>algorithm</b> is a process to be followed in problem-solving operations.</li>
+		<li class="fragment">Algorithms contain very detailed instructions of every step needed to achieve a particular result.</li>
 
-	* Python is a high-level, general-purpose programming language. 
-	* **high-level:** means it is easier to use than other programming languages
-	* **general-purpose:** means it can be used to make almost any kind of application
-	* It was created by *Guido van Rossum* as a beginner friendly programming language
+	</ul>
+</section>
+<section>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/kM9ASKAni_s?si=l8Y7GZn-alyvQRPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section>
+	<!-- binary -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/M41M9ATm49M?si=QYbai6OHQKMYzL0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section>
+	<p><b>What is a programming language?</b></p>
+	<ul>
+		<li class="fragment">programming languages are a way of instructing a computer to do a certain task</li>
+		<li class="fragment">programming languages help translate our instructions into binary so that the computer can understand them</li>
+	</ul>
+</section>
+<section>
+	<p><b>What is Python?</b></p>
+	<ul>
+		<li class="fragment">Python is a <b>high-level</b>, general-purpose programming language. </li>
+		<li class="fragment"><b>high-level:</b> means it is easier to use than other programming languages</li>
+		<li class="fragment"><b>general-purpose:</b> means it can be used to make almost any kind of application</li>
+	</ul>
+</section>
+<section>
+	<p>All programming languages, including Python, have <b>syntax</b></p>
+	<p>Syntax is like the grammar for code</p>
+	<p>The computer cannot understand code without proper syntax</p>
+	<pre>
+		<code data-trim data-noescape>
+			print("Hello") ### This is correct
+			print "Hello"  ### This is not correct
+		</code>
+	</pre>
+</section>
+<section>
+	<p>Writing code without proper syntax leads to <b>syntax errors</b></p>
+	<img height="400" src="images/syntax_errors.png"></img>
+</section>
+<section>
+	<h5>The Print Statement</h5>
+	<p>The <b>print()</b> statement is used to show something to the user</p>
+	<p>For example, to show the words <b>Hello, World!</b> on the screen, we will write</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("Hello, World!")
+	</code>
+	</pre>
+</section>
+<section>
+	<p>You can join two pieces of text by using a $+$ sign</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("Hi, my name is " +  "Amelia!")
+	</code>
+	</pre>
 
-	**Note:** We use version 3.0 of Python, also called **python3**
-
-	Version 2.0 of Python, called **python2** is also commonly used.
+	
+	<p>You also can join two pieces of text together using a comma.</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("Hi, my name is" , "Amelia!")
+	</code>
+	</pre>
+	<p>The code above shows the text <b>Hi, my name is Amelia</b></p>
+	<p>Notice that it adds a space in between</p>
+</section>
+<section>
+	<p>We can also assign some pieces of data a different name</p>
+	<p>These are called <b>variables</b></p>
+	<pre>
+	<code data-trim data-noescape>
+		user = "Claude"
+		print("Hello", user, "!", "It is nice to meet you.")
+	</code>
+	</pre>
+	<p class="fragment">This will show <b>Hello Claude ! It is nice to meet you.</b></p>
+</section>
+<section>
+	<pre>
+	<code data-trim data-noescape>
+		number = 5
+		double = 2 * number
+		number = 15
+	</code>
+	</pre>
+	<p>What would be the value of the variables <b>number</b> and <b>double</b> after the code has finished running?</p>
+</section>
+<section>
+	<h5>The input() function</h5>
+	
+	<p>When the <b>input()</b> function is called, the program pauses and waits for the user's input</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("What is your name?")
+		user = input()
+		print("Hello", user)
+	</code>
+	</pre>
+	<p>Here the text typed by the user is assigned to the variable called <b>user</b></p>
+</section>
+<section>
+	<h5>What would this code do?</h5>
+	<pre>
+	<code data-trim data-noescape>
+		print("Which is your favourite film?")
+		film = input()
+		print(film, "is my favourite film too!")
+	</code>
+	</pre>
+	<div class="fragment">
+		<p>You can also shorten the code as</p>
+	<pre>
+	<code data-trim data-noescape>
+		film = input("Which is your favourite film?")
+		print(film, "is my favourite film too!")
+	</code>
+	</pre>
+	</div>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+		lucky = 13
+		print("My lucky number is", lucky)
+	</code>
+	</pre>
+	<p><b>True or False:</b> The code will always produce the same output whenever it is executed</p>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+		lucky = input("Enter a number")
+		print("My lucky number is", lucky)
+	</code>
+	</pre>
+	<p><b>True or False:</b> The code will always produce the same output whenever it is executed</p>
+</section>
+<section>
+	<pre>
+	<code data-trim data-noescape>
+	days = 365
+	print(days, "days in a year")
+	</code>
+	</pre>
+	<p class="fragment">This code prints <b>365 days in a year</b></p>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+	days = 7 * 31 + 4 * 30 + 28
+	print(days, "days in a year")
+	</code>
+	</pre>
+	<p class="fragment">The code above is performing <b>arithmetic operations</b></p>
+</section>
+<section>
+	<img height="600" src="images/arithmetic_operators.png"></img>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+	days = 7 * 31 + 4 * 30 + 28
+	quad = days * 4 + 1
+	print("There are", quad, "days in four years")
+	</code>
+	</pre>
+</section>
+<section>
+	<p><b>Exercise:</b> Write a program to ask the user to input a time in seconds and convert it to minutes.</p>
+	<pre class="fragment">
+	<code data-trim data-noescape>
+	secs = int(input("Enter the time in seconds"))
+	mins = secs // 60
+	print(mins, "minutes", "in", secs, "seconds")
+	</code>
+	</pre>
 </section>
 <section data-markdown>
 	### Task 0: Register a compiler
@@ -39,7 +215,7 @@
 	### Task 1: Hello World
 
 
-	print("Hello, world!")
+		print("Hello, world!")
 
 	* Type the above line in the code window
 	* Press **Ctrl-S** to save, and click the green **Run** button
@@ -63,24 +239,27 @@
 	**\n** is known as a *newline* character
 
 	### Task 3: Printing numbers and calculating
-	print(42)
-	print(3.14)
-	print(1 + 2)
-	print(7 - 5)
-	print(4 * 8)
-	print(10 / 5)
+	
+		print(42)
+		print(3.14)
+		print(1 + 2)
+		print(7 - 5)
+		print(4 * 8)
+		print(10 / 5)
+
 	* Type out the above code
 	* Try to explain the result
 
 </section>
 <section data-markdown>
 	### Task 4: Making a variable
-	message = "Hi, my name is"
-	print("message")
-	print(message)
-	print(message + "pranay")
-	message2 = "What is your name?"
-	print(message2 * 3)
+
+		message = "Hi, my name is"
+		print("message")
+		print(message)
+		print(message + "pranay")
+		message2 = "What is your name?"
+		print(message2 * 3)
 
 	* Type the above code in your code editor
 	* Explain the results
@@ -97,34 +276,38 @@
 </section>
 <section data-markdown>
 	### Task 5: Using Variables
-	my_variable = 10
-	print(my_variable)
-	print(my_variable + 15)
-	print(my_variable * 20)
-	my_variable = 12
-	print(my_variable / 3)
-	my_variable = my_variable + 3
-	print(my_variable)
+
+		my_variable = 10
+		print(my_variable)
+		print(my_variable + 15)
+		print(my_variable * 20)
+		my_variable = 12
+		print(my_variable / 3)
+		my_variable = my_variable + 3
+		print(my_variable)
 
 	* Type out the above code in your editor
 	* Explain your results
 </section>
 <section data-markdown>
 	### Task 6: Getting user input and comments
-	# Print "Hello, world!" on the screen:
-	print('Hello, world!')
-	# Get the user's name from their keyboard input:
-	name = input('What is your name? \n')
-	# Greet the user by their name:
-	print('Hello, ' + name)
+
+		# Print "Hello, world!" on the screen:
+		print('Hello, world!')
+		# Get the user's name from their keyboard input:
+		name = input('What is your name? \n')
+		# Greet the user by their name:
+		print('Hello, ' + name)
+
 	* Type out the above code in your editor
 	* Explain your results
 </section>
 <section data-markdown>
 	### Task 7: Converting celsius to fahrenheit
-	temp_in_celsius = input('Enter the temperature in celsius\n')
-	temp_in_fahrenheit = (temp_in_celsius * 9)/5 + 32
-	print('The temperature in fahrenheit is ' + temp_in_fahrenheit)
+
+		temp_in_celsius = input('Enter the temperature in celsius\n')
+		temp_in_fahrenheit = (temp_in_celsius * 9)/5 + 32
+		print('The temperature in fahrenheit is ' + temp_in_fahrenheit)
 
 	* The formula for converting to fahrenheit is 
 	$$ \text{fahrenheit} = \frac{9}{5} \times \text{celsius} + 32$$
@@ -141,9 +324,10 @@
 </section>
 <section data-markdown>
 	### Task 8: Text and Numbers
-	age = input('Enter your age\n')
-	age += 5
-	print("Your age after 5 years is: " + age)
+
+		age = input('Enter your age\n')
+		age += 5
+		print("Your age after 5 years is: " + age)
 
 	* Type out the above code
 	* It will show a type error
@@ -151,48 +335,48 @@
 </section>
 <section data-markdown>
 	### Task 9: Dice
-	import random
+		import random
 
-	dice_roll = random.randint(1,6)
+		dice_roll = random.randint(1,6)
 
-	print("You rolled: " + str(dice_roll))
+		print("You rolled: " + str(dice_roll))
 
 	The above code will simulate a dice roll
 </section>
 <section data-markdown>
 	### Task 10: Guess the number
-	import random 
 
-	print('Hello, what is your name?')
-	name = input()
-	print('Okay, ' + name + ', I am thinking  of a number between 1 and 6.')
-	randomNumber = random.randint(1,6)
-	print('What number am I thinking of?')
-	guess = int(input())
-	if guess == randomNumber:
-	print('You are correct!')
-	else:
-	print('Wrong guess, the number I am thinking of is ' + str(randomNumber))
+		import random 
+
+		print('Hello, what is your name?')
+		name = input()
+		print('Okay, ' + name + ', I am thinking  of a number between 1 and 6.')
+		randomNumber = random.randint(1,6)
+		print('What number am I thinking of?')
+		guess = int(input())
+		if guess == randomNumber:
+		print('You are correct!')
+		else:
+		print('Wrong guess, the number I am thinking of is ' + str(randomNumber))
 
 	* The **if** statement will execute some code if a condition is true
 	* If the condition is not true, the code in the **else** block will run
 </section>
 <section data-markdown>
 	### Task 11: Rerolling Dice
-	import random
 
-	keep_rolling = True
-	while keep_rolling:
-	dice_roll = random.randint(1,6)
-	print('You rolled: ' + str(dice_roll))
-	roll_again = input("Do you want to roll again? (Y/N)\n")
-	if roll_again == 'N':
-	keep_rolling = False
+		import random
+
+		keep_rolling = True
+		while keep_rolling:
+		dice_roll = random.randint(1,6)
+		print('You rolled: ' + str(dice_roll))
+		roll_again = input("Do you want to roll again? (Y/N)\n")
+		if roll_again == 'N':
+		keep_rolling = False
 
 	* We can extend the previous code using a **while loop**
 	* Pay attention to the spaces in the above code. These are called **tabs**
 	* **while loops** will keep doing the code under it as long as *the condition is true*
 	* An **if** statement will run the code under it *if the condition is true*
 </section>
-
-
