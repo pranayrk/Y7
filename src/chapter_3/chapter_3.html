@@ -305,9 +305,9 @@
 <section data-markdown>
 	### Task 7: Converting celsius to fahrenheit
 
-		temp_in_celsius = input('Enter the temperature in celsius\n')
+		temp_in_celsius = int(input('Enter the temperature in celsius\n'))
 		temp_in_fahrenheit = (temp_in_celsius * 9)/5 + 32
-		print('The temperature in fahrenheit is ' + temp_in_fahrenheit)
+		print('The temperature in fahrenheit is ' + str(temp_in_fahrenheit))
 
 	* The formula for converting to fahrenheit is 
 	$$ \text{fahrenheit} = \frac{9}{5} \times \text{celsius} + 32$$
@@ -331,6 +331,7 @@
 
 	* Type out the above code
 	* It will show a type error
+	* Fix the error
 	* Explain your results
 </section>
 <section data-markdown>
@@ -339,7 +340,7 @@
 
 		dice_roll = random.randint(1,6)
 
-		print("You rolled: " + str(dice_roll))
+		print("You rolled: ", dice_roll)
 
 	The above code will simulate a dice roll
 </section>
@@ -348,19 +349,51 @@
 
 		import random 
 
-		print('Hello, what is your name?')
+		print("Hello, what is your name?")
 		name = input()
-		print('Okay, ' + name + ', I am thinking  of a number between 1 and 6.')
+		print("Okay, ", name , ", I am thinking  of a number between 1 and 6.")
 		randomNumber = random.randint(1,6)
-		print('What number am I thinking of?')
+		print("What number am I thinking of?")
 		guess = int(input())
 		if guess == randomNumber:
-		print('You are correct!')
+			print("You are correct!")
 		else:
-		print('Wrong guess, the number I am thinking of is ' + str(randomNumber))
+			print("Wrong guess, the number I am thinking of is ", randomNumber)
 
 	* The **if** statement will execute some code if a condition is true
 	* If the condition is not true, the code in the **else** block will run
+	* Pay attention to the space at the start of the lines in the if and else statement. These are called **tabs**
+</section>
+<section data-markdown>
+	### Exercise
+	* Write a program to ask the user for their age.
+	* If their age is less than 18, say "You cannot vote yet!"
+	* If their age above 18, say "You can vote now!"
+</section>
+<section>
+	<h3>Task 11: Even or Odd</h3>
+	<pre>
+		<code data-trim data-noescape>
+		number = int(input("Enter a number\n"))
+		remainder = number % 2
+		if remainder == 0:
+			print(number, "is even")
+		else:
+			print(number, "is odd")
+		</code>
+	</pre>
+
+	<p>The % symbol will find the remainder after division by 2</p>
+
+</section>
+<section data-markdown>
+	### Exercise
+	* Write a program to ask the user to input their marks in a subject
+	* If the marks entered are more than 90, say "You get A*"
+	* If the marks entered are more than 80, say "You get A"
+	* If the marks entered are more than 70, say "You get B"
+	* If the marks entered are more than 60, say "You get C"
+	* If the marks entered are more than 50, say "You get D"
 </section>
 <section data-markdown>
 	### Task 11: Rerolling Dice
@@ -369,14 +402,13 @@
 
 		keep_rolling = True
 		while keep_rolling:
-		dice_roll = random.randint(1,6)
-		print('You rolled: ' + str(dice_roll))
-		roll_again = input("Do you want to roll again? (Y/N)\n")
-		if roll_again == 'N':
-		keep_rolling = False
+			dice_roll = random.randint(1,6)
+			print("You rolled: ", dice_roll)
+			roll_again = input("Do you want to roll again? (Y/N)\n")
+			if roll_again == 'N':
+				keep_rolling = False
 
 	* We can extend the previous code using a **while loop**
-	* Pay attention to the spaces in the above code. These are called **tabs**
 	* **while loops** will keep doing the code under it as long as *the condition is true*
 	* An **if** statement will run the code under it *if the condition is true*
 </section>
