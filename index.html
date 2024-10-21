@@ -184,6 +184,7 @@
 	<p><b>True or False:</b> The code will always produce the same output whenever it is executed</p>
 </section>
 <section>
+	<h5>What would be the output of the code below?</h5>
 	<pre>
 	<code data-trim data-noescape>
 	days = 365
@@ -216,6 +217,27 @@
 	</pre>
 </section>
 <section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+	answer = 3 + 13 * 3
+	print("The answer is", answer)
+	</code>
+	</pre>
+</section>
+<section>
+	<p><b>Exercise:</b> Write a program to ask the user to input some time in minutes and convert it to seconds.</p>
+	<pre class="fragment">
+	<code data-trim data-noescape>
+	minutes = input("Enter the time in minutes")
+	seconds = int(minutes) * 60
+	print(mintues, "minutes", "means", seconds, "seconds")
+	</code>
+	</pre>
+</section>
+
+</section>
+<section>
 	<p><b>Exercise:</b> Write a program to ask the user to input a time in seconds and convert it to minutes.</p>
 	<pre class="fragment">
 	<code data-trim data-noescape>
@@ -224,6 +246,42 @@
 	print(mins, "minutes", "in", secs, "seconds")
 	</code>
 	</pre>
+</section>
+<section>
+	<img height="500" src="images/if_introduction.png"></img>
+</section>
+<section>
+	<img height="500" src="images/selection_in_python.png"></img>
+</section>
+<section>
+	<img height="500" src="images/selection_operators.png"></img>
+</section>
+<section>
+	<pre>
+	<code data-trim data-noescape>
+	print("What is the best film ever?")
+	film = input()
+	if film != "kung fu panda":
+		print("Oh, I see!")
+	else: 
+		print("That is my favourite film too!")
+	</code>
+	</pre>
+
+</section>
+<section>
+	<pre>
+	<code data-trim data-noescape>
+	lucky = 13
+	print("Guess the number")
+	guess = int(input())
+	if guess == lucky:
+		print("Your guess was correct!")
+	else:
+		print("Wrong, keep trying")
+	</code>
+	</pre>
+
 </section>
 <section data-markdown>
 	### Task 0: Register a compiler
