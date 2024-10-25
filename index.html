@@ -37,6 +37,7 @@
 	<img src="images/nisa_logo.png"></img>
 	<h6>Naypyitaw International Science Academy</h6>
 </section>
+<!--
 <section>
 	<p><b>What is an algorithm?</b></p>
 	<ul>
@@ -49,7 +50,6 @@
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/kM9ASKAni_s?si=l8Y7GZn-alyvQRPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 <section>
-	<!-- binary -->
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/M41M9ATm49M?si=QYbai6OHQKMYzL0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 <section>
@@ -283,6 +283,7 @@
 	</pre>
 
 </section>
+-->
 <!--
 <section data-markdown>
 	### Task 0: Register a compiler
@@ -427,6 +428,96 @@
 	* Explain your results
 </section>
 -->
+<section>
+	<h3>Task: Age</h3>
+	<pre>
+		<code data-trim data-noescape>
+		age = int(input("Enter your age\n"))
+		if age < 18:
+		      print("You cannot vote yet!")
+		else:
+		      print("You can vote now!")
+		</code>
+	</pre>
+</section>
+<section>
+	<h3>Task: Even or Odd</h3>
+	<pre>
+		<code data-trim data-noescape>
+		number = int(input("Enter a number\n"))
+		remainder = number % 2
+		if remainder == 0:
+			print(number, "is even")
+		else:
+			print(number, "is odd")
+		</code>
+	</pre>
+	<p>The % symbol will find the remainder after division by 2</p>
+</section>
+
+
+<section>
+	<h3>Task: Positive or Negative</h3>
+	<pre>
+		<code data-trim data-noescape>
+	number = int(input("Enter a number"))
+
+	if number > 0:
+		print("The number is positive")
+	elif number < 0: 
+		print("The number is negative")
+	else: 
+		print("The number is zero")
+		</code>
+	</pre>
+</section>
+<section>
+	<h3>Task: Greater Number</h3>
+	<pre>
+	<code data-trim data-noescape>
+		num1 = int(input("Enter the first number"))
+		num2 = int(input("Enter the second number"))
+
+		if num1 > num2:
+			print("The first number is greater")
+		elif num1 < num2:
+			print("The second number is greater")
+		else:
+			print("Both numbers are equal")
+	</code>
+	</pre>
+</section>
+<section data-markdown>
+	### Exercise
+
+	* Write a program to get a score as input
+	* Print **Pass** if the score is 50 or above, and **Fail** if the score is less than 50
+</section>
+<section data-markdown>
+	### Exercise
+	Write a program to ask the user to input their marks in a subject
+	* If the marks entered are above 90, say **You get A+**
+	* If the marks entered are above 80, say **You get A**
+	* If the marks entered are above 70, say **You get B**
+	* If the marks entered are above 60, say **You get C**
+	* If the marks entered are above 50, say **You get D**
+</section>
+<section>
+	<h3>Task: Higher Temperature</h3>
+<pre>
+<code data-trim data-noescape>
+temperature = float(input("Enter a temperature"))
+if temperature < 10:
+      print("Cold")
+elif temperature <= 25:
+      print("Warm")
+else:
+      print("Hot")
+</code>
+</pre>
+</section>
+
+<!--
 <section data-markdown>
 	### Task 9: Dice
 		import random
@@ -457,43 +548,6 @@
 	* If the condition is not true, the code in the **else** block will run
 	* Pay attention to the space at the start of the lines in the if and else statement. These are called **tabs**
 </section>
-<section>
-	<h3>Task 11: Age</h3>
-	<pre>
-		<code data-trim data-noescape>
-		age = int(input("Enter your age\n"))
-		if age < 18:
-		      print("You cannot vote yet!")
-		else:
-		      print("You can vote now!")
-		</code>
-	</pre>
-</section>
-<section>
-	<h3>Task 11: Even or Odd</h3>
-	<pre>
-		<code data-trim data-noescape>
-		number = int(input("Enter a number\n"))
-		remainder = number % 2
-		if remainder == 0:
-			print(number, "is even")
-		else:
-			print(number, "is odd")
-		</code>
-	</pre>
-
-	<p>The % symbol will find the remainder after division by 2</p>
-
-</section>
-<section data-markdown>
-	### Exercise
-	* Write a program to ask the user to input their marks in a subject
-	* If the marks entered are above 90, say "You get A*"
-	* If the marks entered are above 80, say "You get A"
-	* If the marks entered are above 70, say "You get B"
-	* If the marks entered are above 60, say "You get C"
-	* If the marks entered are above 50, say "You get D"
-</section>
 <section data-markdown>
 	### Task 12: Rerolling Dice
 
@@ -511,6 +565,7 @@
 	* **while loops** will keep doing the code under it as long as *the condition is true*
 	* An **if** statement will run the code under it *if the condition is true*
 </section>
+-->
 
 			</div>
 		</div>

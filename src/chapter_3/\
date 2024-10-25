@@ -17,6 +17,7 @@
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/kM9ASKAni_s?si=l8Y7GZn-alyvQRPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 <section>
+	<!-- binary -->
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/M41M9ATm49M?si=QYbai6OHQKMYzL0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 <section>
@@ -407,6 +408,7 @@
 		</code>
 	</pre>
 </section>
+<!--
 <section>
 	<h3>Task: Even or Odd</h3>
 	<pre>
@@ -435,23 +437,23 @@
 		print("The number is negative")
 	else: 
 		print("The number is zero")
-		</code>
+		      <\code>
 	</pre>
 </section>
 <section>
 	<h3>Task: Greater Number</h3>
 	<pre>
-	<code data-trim data-noescape>
-		num1 = int(input("Enter the first number"))
-		num2 = int(input("Enter the second number"))
+		<code data-trim data-noescape>
+			num1 = int(input("Enter the first number"))
+			num2 = int(input("Enter the second number"))
 
-		if num1 > num2:
-			print("The first number is greater")
-		elif num1 < num2:
-			print("The second number is greater")
-		else:
-			print("Both numbers are equal")
-	</code>
+			if num1 > num2:
+				print("The first number is greater")
+			elif num1 < num2:
+		      		print("The second number is greater")
+		      	else:
+		      		print("Both numbers are equal")
+		</code>
 	</pre>
 </section>
 <section data-markdown>
@@ -462,26 +464,25 @@
 </section>
 <section data-markdown>
 	### Exercise
-	Write a program to ask the user to input their marks in a subject
-	* If the marks entered are above 90, say **You get A+**
-	* If the marks entered are above 80, say **You get A**
-	* If the marks entered are above 70, say **You get B**
-	* If the marks entered are above 60, say **You get C**
-	* If the marks entered are above 50, say **You get D**
+	* Write a program to ask the user to input their marks in a subject
+	* If the marks entered are above 90, say "You get A*"
+	* If the marks entered are above 80, say "You get A"
+	* If the marks entered are above 70, say "You get B"
+	* If the marks entered are above 60, say "You get C"
+	* If the marks entered are above 50, say "You get D"
 </section>
 <section>
-	<h3>Task: Higher Temperature</h3>
-<pre>
-<code data-trim data-noescape>
-temperature = float(input("Enter a temperature"))
-if temperature < 10:
-      print("Cold")
-elif temperature <= 25:
-      print("Warm")
-else:
-      print("Hot")
-</code>
-</pre>
+	<pre>
+	<code data-trim data-noescape>
+		temperature = float(input("Enter a temperature"))
+		if temperature < 10:
+	      		print("Cold")
+	      	elif temperature <= 25:
+	      		print("Warm")
+	      	else:
+	      		print("Hot")
+	</code>
+	</pre>
 </section>
 
 <!--
