@@ -33,100 +33,619 @@
 
 <section>
 	<h1>ICT - Year 7</h1>
-	<h5>Chapter 5: Multimedia</h5>
-	<h6>Make a Podcast</h6>
+	<h6>Chapter 3: Computational Thinking: Programming Languages</h6>
 	<img src="images/nisa_logo.png"></img>
 	<h6>Naypyitaw International Science Academy</h6>
 </section>
-<section data-markdown>
-	> A **podcast** is a digital audio program that can be streamed or downloaded from the internet, often available as a series of episodes focusing on a specific topic or theme.   
-	> It is similar to a radio show but more flexible, allowing listeners to enjoy content on-demand at their convenience.  
-	> Podcasts can vary in length, format, and style, and they often cover a wide range of topics such as storytelling, education, interviews, news, or entertainment.
+<!--
+<section>
+	<p><b>What is an algorithm?</b></p>
+	<ul>
+		<li class="fragment">An <b>algorithm</b> is a process to be followed in problem-solving operations.</li>
+		<li class="fragment">Algorithms contain very detailed instructions of every step needed to achieve a particular result.</li>
+
+	</ul>
 </section>
 <section>
-	<img height="400" src="images/hardcore_history.jpeg"></img>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/kM9ASKAni_s?si=l8Y7GZn-alyvQRPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 <section>
-	<a href="https://5minutemysteries.com/the-mystery-of-the-zodiac-killer/">5 minute mysteries</a>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/M41M9ATm49M?si=QYbai6OHQKMYzL0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
-<section data-markdown>
-### Key Characteristics of a Podcast
+<section>
+	<p><b>What is a programming language?</b></p>
+	<ul>
+		<li class="fragment">programming languages are a way of instructing a computer to do a certain task</li>
+		<li class="fragment">programming languages help translate our instructions into binary so that the computer can understand them</li>
+	</ul>
+</section>
+<section>
+	<p><b>What is Python?</b></p>
+	<ul>
+		<li class="fragment">Python is a <b>high-level</b>, general-purpose programming language. </li>
+		<li class="fragment"><b>high-level:</b> means it is easier to use than other programming languages</li>
+		<li class="fragment"><b>general-purpose:</b> means it can be used to make almost any kind of application</li>
+	</ul>
+</section>
+<section>
+	<p>All programming languages, including Python, have <b>syntax</b></p>
+	<p>Syntax is like the grammar for code</p>
+	<p>The computer cannot understand code without proper syntax</p>
+	<pre>
+		<code data-trim data-noescape>
+			print("Hello") ### This is correct
+			print "Hello"  ### This is not correct
+		</code>
+	</pre>
+</section>
+<section>
+	<p>Writing code without proper syntax leads to <b>syntax errors</b></p>
+	<img height="400" src="images/syntax_errors.png"></img>
+</section>
+<section>
+	<h5>The Print Statement</h5>
+	<p>The <b>print()</b> statement is used to show something to the user</p>
+	<p>For example, to show the words <b>Hello, World!</b> on the screen, we will write</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("Hello, World!")
+	</code>
+	</pre>
+</section>
+<section>
+	<p>You can join two pieces of text by using a $+$ sign</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("Hi, my name is " +  "Amelia!")
+	</code>
+	</pre>
 
-* **Audio-Based:** The audio format makes it accessible for listeners who want to engage with content while multitasking.
-* **Episode Structure:** Podcasts are usually organized into episodes, which can be standalone or part of an ongoing series.
-* **On-Demand:** Unlike live radio, podcasts can be streamed or downloaded and listened to whenever the listener chooses.
-* **Variety of Formats:** These can include solo commentary, interviews, co-hosted discussions, storytelling, panel discussions, or educational segments.
-</section>
-<section data-markdown>
-	> Podcasts have gained significant popularity because they offer flexibility and variety.  
-	> Podcasts combine the traditional aspects of radio with the digital advantages of internet access, making them a versatile and accessible form of modern media.
-</section>
-<section data-markdown>
-	### Define Your Purpose and Audience
-
-	* **Clarify Your Goal:** Determine why you are creating the podcast. Is it to inform, entertain, teach, or share stories?
-	* **Identify Your Target Audience:** Understanding who will listen to your podcast helps you tailor the content to their interests and needs.
-	* **Select a Topic:** Choose a topic you’re passionate about or knowledgeable in.
-</section>
-<section data-markdown>
-	### Choose a Format
 	
-	* **Decide on the Format:** Choose a format that suits your content, such as:
-		* **Interview-based:** Inviting guests to share insights.
-		* **Solo podcast:** One person speaking about a topic.
-		* **Co-hosted show:** Conversations between two or more hosts.
-		* **Storytelling:** Narrative-based episodes.
-		* **Educational or how-to:** Focused on teaching specific skills or knowledge.
+	<p>You also can join two pieces of text together using a comma.</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("Hi, my name is" , "Amelia!")
+	</code>
+	</pre>
+	<p>The code above shows the text <b>Hi, my name is Amelia</b></p>
+	<p>Notice that it adds a space in between</p>
+</section>
+<section>
+	<p>We can also assign some pieces of data a different name</p>
+	<p>These are called <b>variables</b></p>
+	<pre>
+	<code data-trim data-noescape>
+		user = "Claude"
+		print("Hello", user, "!", "It is nice to meet you.")
+	</code>
+	</pre>
+	<p class="fragment">This will show <b>Hello Claude ! It is nice to meet you.</b></p>
+</section>
+<section>
+	<pre>
+	<code data-trim data-noescape>
+		number = 5
+		double = 2 * number
+		number = 15
+	</code>
+	</pre>
+	<p>What would be the value of the variables <b>number</b> and <b>double</b> after the code has finished running?</p>
+</section>
+<section>
+	<h5>The input() function</h5>
+	
+	<p>When the <b>input()</b> function is called, the program pauses and waits for the user's input</p>
+	<pre>
+	<code data-trim data-noescape>
+		print("What is your name?")
+		user = input()
+		print("Hello", user)
+	</code>
+	</pre>
+	<p>Here the text typed by the user is assigned to the variable called <b>user</b></p>
+</section>
+<section>
+	<h5>What would this code do?</h5>
+	<pre>
+	<code data-trim data-noescape>
+		print("Which is your favourite film?")
+		film = input()
+		print(film, "is my favourite film too!")
+	</code>
+	</pre>
+	<div class="fragment">
+		<p>You can also shorten the code as</p>
+	<pre>
+	<code data-trim data-noescape>
+		film = input("Which is your favourite film?")
+		print(film, "is my favourite film too!")
+	</code>
+	</pre>
+	</div>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+		lucky = 13
+		print("My lucky number is", lucky)
+	</code>
+	</pre>
+	<p><b>True or False:</b> The code will always produce the same output whenever it is executed</p>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+		lucky = input("Enter a number")
+		print("My lucky number is", lucky)
+	</code>
+	</pre>
+	<p><b>True or False:</b> The code will always produce the same output whenever it is executed</p>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+	days = 365
+	print(days, "days in a year")
+	</code>
+	</pre>
+	<p class="fragment">This code prints <b>365 days in a year</b></p>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+	days = 7 * 31 + 4 * 30 + 28
+	print(days, "days in a year")
+	</code>
+	</pre>
+	<p class="fragment">The code above is performing <b>arithmetic operations</b></p>
+</section>
+<section>
+	<img height="600" src="images/arithmetic_operators.png"></img>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+	days = 7 * 31 + 4 * 30 + 28
+	quad = days * 4 + 1
+	print("There are", quad, "days in four years")
+	</code>
+	</pre>
+</section>
+<section>
+	<h5>What would be the output of the code below?</h5>
+	<pre>
+	<code data-trim data-noescape>
+	answer = 3 + 13 * 3
+	print("The answer is", answer)
+	</code>
+	</pre>
+</section>
+<section>
+	<p><b>Exercise:</b> Write a program to ask the user to input some time in minutes and convert it to seconds.</p>
+	<pre class="fragment">
+	<code data-trim data-noescape>
+	minutes = input("Enter the time in minutes")
+	seconds = int(minutes) * 60
+	print(mintues, "minutes", "means", seconds, "seconds")
+	</code>
+	</pre>
+</section>
+
+</section>
+<section>
+	<p><b>Exercise:</b> Write a program to ask the user to input a time in seconds and convert it to minutes.</p>
+	<pre class="fragment">
+	<code data-trim data-noescape>
+	secs = int(input("Enter the time in seconds"))
+	mins = secs // 60
+	print(mins, "minutes", "in", secs, "seconds")
+	</code>
+	</pre>
+</section>
+<section>
+	<img height="500" src="images/if_introduction.png"></img>
+</section>
+<section>
+	<img height="500" src="images/selection_in_python.png"></img>
+</section>
+<section>
+	<img height="500" src="images/selection_operators.png"></img>
+</section>
+<section>
+	<pre>
+	<code data-trim data-noescape>
+	print("What is the best film ever?")
+	film = input()
+	if film != "kung fu panda":
+		print("Oh, I see!")
+	else: 
+		print("That is my favourite film too!")
+	</code>
+	</pre>
+
+</section>
+<section>
+	<pre>
+	<code data-trim data-noescape>
+	lucky = 13
+	print("Guess the number")
+	guess = int(input())
+	if guess == lucky:
+		print("Your guess was correct!")
+	else:
+		print("Wrong, keep trying")
+	</code>
+	</pre>
+
+</section>
+<!--
+<section data-markdown>
+	### Task 0: Register a compiler
+
+	* Log in to your google account
+	* Go to *repl.it*
+	* Click **Sign Up** and sign up with your google account
+	* Fill in your first and last name
+	* Select **None** for experience and **For School** for purpose
+	* Select the **Starter** Plan (Free)
+	* From the top left option, select **Create Repl**
+	* Keep the template as **Python**, enter the title as *Task 1*
+	* Click **Next** through the introduction (read the tips)
 </section>
 <section data-markdown>
-	### Create an Episode Outline
-
-	* **Plan the Structure:** Break down the episode into segments (e.g., intro, main content, interviews, outro). A typical structure might be:
-		* **Introduction:** Welcoming listeners and outlining what the episode will cover.
-		* **Main Content:** The core discussion or storytelling.
-		* **Breaks or Segments:** Insert transitions, sound effects, or brief ads if needed.
-		* **Conclusion:** Summarize key points, thank guests (if any), and encourage listeners to tune in again.
-	* **Write a Script or Bullet Points:** Depending on your comfort level, create a full script or just bullet points to guide the conversation while keeping it natural.
+	* Whenever you start learning a programming language, you almost always start with a *Hello, world!* program. 
+	* This is a very basic program that just tells the computer to show the words *Hello, world!* in the console.
+	* Doing this is a long-held tradition in any programming community.
+	* To tell the computer to show words on the screen using *python*, we use the **print()** function.
 </section>
 <section data-markdown>
-	### Plan Your Recording Setup
+	### Task 1: Hello World
 
-	* **Choose Your Equipment:** Decide on the type of microphone and audio recording software you will use. Popular free software includes Audacity and GarageBand.
-	* **Prepare Your Recording Space:** Ensure the space is quiet and has minimal background noise. Soft furnishings can help reduce echo.
+
+		print("Hello, world!")
+
+	* Type the above line in the code window
+	* Press **Ctrl-S** to save, and click the green **Run** button
+	* Observe the output in the console  
+
+
+
+	### Exercise: Printing
+	print()
+	* Add the above line to your code
+	* Add a line to your program to show the words "I am going to take over the world!" in the console.
+
+	**Note:** Python runs code from top to bottom
 </section>
 <section data-markdown>
-### Prepare Your Content
+	### Exercise: Printing longer text
 
-* **Research Thoroughly:** Gather all the facts, stories, or questions you need for your episode.
-* **Invite Guests (if applicable):** If your format involves guests, reach out and coordinate interview times. Prepare questions in advance and share them with the guest to help them prepare.
-</section>
-<section data-markdown>
-	### Rehearse and Test Equipment
+	* Use the **print()** function to print longer pieces of text
+	* Type **\n** between some words to go to the next line.
 
-	* **Practice Your Script:** Run through the script to ensure it flows smoothly and the timing feels right.
-	* **Test Your Equipment:** Do a quick recording test to check the audio quality and volume levels.
-</section>
-<section data-markdown>
-	### Recording
+	**\n** is known as a *newline* character
 
-	* **Record in Segments:** Consider recording different parts of the podcast separately to make editing easier.
-	* **Speak Clearly and Maintain Energy:** Use an engaging tone and keep a steady pace.
-</section>
-<section data-markdown>
-	### Edit and Polish
+	### Task 3: Printing numbers and calculating
+	
+		print(42)
+		print(3.14)
+		print(1 + 2)
+		print(7 - 5)
+		print(4 * 8)
+		print(10 / 5)
 
-	* **Edit for Clarity:** Remove mistakes, long pauses, or irrelevant sections. Ensure there’s a natural flow.
-	* **Add Sound Effects and Music:** Use royalty-free music and sound effects to enhance your podcast.
-	* **Adjust Audio Levels:** Balance the sound levels to make sure voices and effects are consistent throughout.
+	* Type out the above code
+	* Try to explain the result
 
 </section>
 <section data-markdown>
-	### Prepare for Publishing
+	### Task 4: Making a variable
 
-	* **Export the Final Audio File:** Save your podcast in a common format like MP3 or WAV.
-	* **Write Show Notes:** Provide a brief description of the episode and list any key points or links.
-	* **Create a Title:** Choose a catchy and relevant title for the episode.
+		message = "Hi, my name is"
+		print("message")
+		print(message)
+		print(message + "pranay")
+		message2 = "What is your name?"
+		print(message2 * 3)
+
+	* Type the above code in your code editor
+	* Explain the results
 </section>
+<section data-markdown>
+	### Exercise: Chapter 2, Assignment 1
+
+	* Read the activity on page 41 and do reasearch on major malware attacks
+	* Write some paragraphs using the information you collected
+	* Use the print statement in python to display your paragraphs in the console
+	* Get your code reviewed and marked
+
+	**Note:** This exercise has marks so include good information
+</section>
+<section data-markdown>
+	### Task 5: Using Variables
+
+		my_variable = 10
+		print(my_variable)
+		print(my_variable + 15)
+		print(my_variable * 20)
+		my_variable = 12
+		print(my_variable / 3)
+		my_variable = my_variable + 3
+		print(my_variable)
+
+	* Type out the above code in your editor
+	* Explain your results
+</section>
+<section data-markdown>
+	### Task 6: Getting user input and comments
+
+		# Print "Hello, world!" on the screen:
+		print('Hello, world!')
+		# Get the user's name from their keyboard input:
+		name = input('What is your name? \n')
+		# Greet the user by their name:
+		print('Hello, ' + name)
+
+	* Type out the above code in your editor
+	* Explain your results
+</section>
+<section data-markdown>
+	### Task 7: Converting celsius to fahrenheit
+
+		temp_in_celsius = int(input('Enter the temperature in celsius\n'))
+		temp_in_fahrenheit = (temp_in_celsius * 9)/5 + 32
+		print('The temperature in fahrenheit is ' + str(temp_in_fahrenheit))
+
+	* The formula for converting to fahrenheit is 
+	$$ \text{fahrenheit} = \frac{9}{5} \times \text{celsius} + 32$$
+	* Using this formula, we can write the program shown above
+	* Explain your results
+
+</section>
+<section data-markdown>
+	### Exercise: Convert fahrenheit to celsius
+
+	* The formula for converting fahrenheit to celsius is
+	$$ \text{celsius} = (\text{fahrenheit} - 32) \times \frac{5}{9}$$
+	* Write a python program to convert fahrenheit to celsius using the above formula
+</section>
+<section data-markdown>
+	### Task 8: Text and Numbers
+
+		age = input('Enter your age\n')
+		age += 5
+		print("Your age after 5 years is: " + age)
+
+	* Type out the above code
+	* It will show a type error
+	* Fix the error
+	* Explain your results
+</section>
+-->
+<section>
+	<h3>Task: Age</h3>
+	<pre>
+		<code data-trim data-noescape>
+		age = int(input("Enter your age\n"))
+		if age < 18:
+		      print("You cannot vote yet!")
+		else:
+		      print("You can vote now!")
+		</code>
+	</pre>
+</section>
+<section>
+	<h3>Task: Even or Odd</h3>
+	<pre>
+		<code data-trim data-noescape>
+		number = int(input("Enter a number\n"))
+		remainder = number % 2
+		if remainder == 0:
+			print(number, "is even")
+		else:
+			print(number, "is odd")
+		</code>
+	</pre>
+	<p>The % symbol will find the remainder after division by 2</p>
+</section>
+
+
+<section>
+	<h3>Task: Positive or Negative</h3>
+	<pre>
+		<code data-trim data-noescape>
+	number = int(input("Enter a number"))
+
+	if number > 0:
+		print("The number is positive")
+	elif number < 0: 
+		print("The number is negative")
+	else: 
+		print("The number is zero")
+		</code>
+	</pre>
+</section>
+<section>
+	<h3>Task: Greater Number</h3>
+	<pre>
+	<code data-trim data-noescape>
+		num1 = int(input("Enter the first number"))
+		num2 = int(input("Enter the second number"))
+
+		if num1 > num2:
+			print("The first number is greater")
+		elif num1 < num2:
+			print("The second number is greater")
+		else:
+			print("Both numbers are equal")
+	</code>
+	</pre>
+</section>
+<section>
+	<h3>Task: Higher Temperature</h3>
+<pre>
+<code data-trim data-noescape>
+temperature = float(input("Enter a temperature"))
+if temperature < 10:
+      print("Cold")
+elif temperature <= 25:
+      print("Warm")
+else:
+      print("Hot")
+</code>
+</pre>
+</section>
+<section data-markdown>
+	### Exercise
+
+	* Write a program to get a score as input
+	* Print **Pass** if the score is 50 or above, and **Fail** if the score is less than 50
+</section>
+<section data-markdown>
+	### Exercise
+	Write a program to ask the user to input their marks in a subject
+	* If the marks entered are above 90, say **You get A+**
+	* If the marks entered are above 80, say **You get A**
+	* If the marks entered are above 70, say **You get B**
+	* If the marks entered are above 60, say **You get C**
+	* If the marks entered are above 50, say **You get D**
+</section>
+<section>
+	<h3>Exercise: Age group classifier</h3>
+	
+	<ul>
+		<li>Write a program that takes a person's age as input and classifies them into age groups</li>
+		<li>0-12: Child</li>
+		<li>13-17: Teenage</li>
+		<li>18-64: Adult</li>
+		<li>65 and above: Senior</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Exercise: A simple calculator</h3>
+
+	<ul>
+		<li>Make a simple calculator that performs addition, subtraction, multiplication or division based on the user's input.</li>
+		<li>A rough algorithm is described below</li>
+	</ul>
+<pre>
+Ask the user to input two numbers
+Ask for the operation
+The user can enter +, -, *, /
+Use if-elif-else to perform the calculation.
+The else can be used incase the user does not enter +, -, *, / 
+</pre>
+</section>
+<!--
+<section>
+	<h3>Exercise: BMI Checker</h3>
+	<ul>
+		<li>Write a program to ask a user to enter a person's height and weight</li>
+		<li>Calculate the BMI as bmi = weight / (height * height)</li>
+		<li>If the BMI is less than 18.5, say "Underweight"</li>
+		<li>If the BMI is less than </li>
+		<li></li>
+		<li></li>
+	</ul>
+</section>
+-->
+<section>
+
+	<h3>Exercise: Shopping Discount</h3>
+	<ul>
+		<li>Write a program to calculate the discount based on the total amount of a purchase.</li>
+		<li>Ask the user to enter the total amount</li>
+		<li><b>Less than 2 lakh kyats:</b> No discount</li>
+		<li><b>2 lakh kyats- 4 lakh kyats:</b> 10% discount</li>
+		<li><b>Over 4 lakh kyats:</b> 20% discount</li>
+		<li>Calculate the final amount to pay after discount is subtracted</li>
+	</ul>
+	<pre>
+ask user to input total purchase_amount
+set final_amount to 0
+if amount less than 2 lakh:
+	final_amount = purchase_amount
+else if amount between 2 lakh and 4 lakh:
+	final_amount = purchase_amount - (purchase_amount * 0.1)
+else if amount over 4 lakh
+	final_amount = purchase_amount - (purchase_amount * 0.2)
+	</pre>
+</section>
+<section>
+	<h3>Exercise: Leap Year Checker</h3>
+	<ul>
+		<li>Create a program to ask a user for a year and check if it is a leap year</li>
+		<li>Use the following condition: A year is a leap year if it is divisible by 4, except if it is divisible by 100 (unless they are also divisible by 400)</li>
+		<li>A rough algorithm is described below</li>
+	</ul>
+	<pre>
+ask the user to input a year
+check if the year is divisible by 400
+	then it is a leap year
+else check if the year is divisible by 4
+	check if the year is not divisible by 100
+		then it is a leap year
+	</pre>
+</section>
+
+<!--
+	<section>
+	rock paper scissors game
+	</section>
+<section data-markdown>
+	### Task 9: Dice
+		import random
+
+		dice_roll = random.randint(1,6)
+
+		print("You rolled: ", dice_roll)
+
+	The above code will simulate a dice roll
+</section>
+<section data-markdown>
+	### Task 10: Guess the number
+
+		import random 
+
+		print("Hello, what is your name?")
+		name = input()
+		print("Okay, ", name , ", I am thinking  of a number between 1 and 6.")
+		randomNumber = random.randint(1,6)
+		print("What number am I thinking of?")
+		guess = int(input())
+		if guess == randomNumber:
+			print("You are correct!")
+		else:
+			print("Wrong guess, the number I am thinking of is ", randomNumber)
+
+	* The **if** statement will execute some code if a condition is true
+	* If the condition is not true, the code in the **else** block will run
+	* Pay attention to the space at the start of the lines in the if and else statement. These are called **tabs**
+</section>
+<section data-markdown>
+	### Task 12: Rerolling Dice
+
+		import random
+
+		keep_rolling = True
+		while keep_rolling:
+			dice_roll = random.randint(1,6)
+			print("You rolled: ", dice_roll)
+			roll_again = input("Do you want to roll again? (Y/N)\n")
+			if roll_again == 'N':
+				keep_rolling = False
+
+	* We can extend the previous code using a **while loop**
+	* **while loops** will keep doing the code under it as long as *the condition is true*
+	* An **if** statement will run the code under it *if the condition is true*
+</section>
+-->
 
 			</div>
 		</div>
