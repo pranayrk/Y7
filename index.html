@@ -37,43 +37,73 @@
 	<img src="images/nisa_logo.png"></img>
 	<h6>Naypyitaw International Science Academy</h6>
 </section>
-<section>
-	<img height="500" src="images/if_introduction.png"></img>
-</section>
-<section>
-	<img height="500" src="images/selection_in_python.png"></img>
-</section>
-<section>
-	<img height="500" src="images/selection_operators.png"></img>
-</section>
-<section>
-	<pre class="python">
-	<code data-trim data-noescape>
-	print("What is the best film ever?")
-	film = input()
-	if film != "kung fu panda":
-		print("Oh, I see!")
-	else:
-		print("That is my favourite film too!")
-	</code>
-	</pre>
 
+<!--
+<section>
+	
+	<h3>Task: Age</h3>
+	<pre class="python">
+		<code data-trim data-noescape>
+		age = int(input("Enter your age\n"))
+		if age < 18:
+		      print("You cannot vote yet!")
+		else:
+		      print("You can vote now!")
+		</code>
+	</pre>
 </section>
 <section>
+	
+	<h3>Task: Even or Odd</h3>
+	<pre class="python">
+		<code data-trim data-noescape>
+		number = int(input("Enter a number\n"))
+		remainder = number % 2
+		if remainder == 0:
+			print(number, "is even")
+		else:
+			print(number, "is odd")
+		</code>
+	</pre>
+	<p>The % symbol will find the remainder after division by 2</p>
+</section>
+<section>
+	
+	<h3>Task: Positive or Negative</h3>
+	<pre class="python">
+		<code data-trim data-noescape>
+	number = int(input("Enter a number"))
+
+	if number > 0:
+		print("The number is positive")
+	elif number < 0: 
+		print("The number is negative")
+	else: 
+		print("The number is zero")
+		</code>
+	</pre>
+</section>
+<section>
+	
+	<h3>Task: Greater Number</h3>
 	<pre class="python">
 	<code data-trim data-noescape>
-	lucky = 13
-	print("Guess the number")
-	guess = int(input())
-	if guess == lucky:
-		print("Your guess was correct!")
-	else:
-		print("Wrong, keep trying")
+		num1 = int(input("Enter the first number"))
+		num2 = int(input("Enter the second number"))
+
+		if num1 > num2:
+			print("The first number is greater")
+		elif num1 < num2:
+			print("The second number is greater")
+		else:
+			print("Both numbers are equal")
 	</code>
 	</pre>
 </section>
 <section>
-	<pre class="python">
+	
+	<h3>Task: Higher Temperature</h3>
+<pre class="python">
 <code data-trim data-noescape>
 temperature = float(input("Enter a temperature"))
 if temperature < 10:
@@ -83,179 +113,169 @@ elif temperature <= 25:
 else:
       print("Hot")
 </code>
+</pre>
+</section>
+<section data-markdown>
+	
+	### Exercise
+
+	* Write a program to get a score as input
+	* Print **Pass** if the score is 50 or above, and **Fail** if the score is less than 50
+</section>
+<section data-markdown>
+	
+	### Exercise
+	Write a program to ask the user to input their marks in a subject
+	* If the marks entered are above 90, say **You get A+**
+	* If the marks entered are above 80, say **You get A**
+	* If the marks entered are above 70, say **You get B**
+	* If the marks entered are above 60, say **You get C**
+	* If the marks entered are above 50, say **You get D**
+</section>
+<section>
+	
+	<h3>Exercise: Age group classifier</h3>
+	
+	<ul>
+		<li>Write a program that takes a person's age as input and classifies them into age groups</li>
+		<li>0-12: Child</li>
+		<li>13-17: Teenage</li>
+		<li>18-64: Adult</li>
+		<li>65 and above: Senior</li>
+	</ul>
+</section>
+
+<section>
+	
+	<h3>Exercise: A simple calculator</h3>
+
+	<ul>
+		<li>Make a simple calculator that performs addition, subtraction, multiplication or division based on the user's input.</li>
+		<li>A rough algorithm is described below</li>
+	</ul>
+<pre>
+Ask the user to input two numbers
+Ask for the operation
+The user can enter +, -, *, /
+Use if-elif-else to perform the calculation.
+The else can be used incase the user does not enter +, -, *, / 
+</pre>
+</section>
+<section>
+	<h3>Exercise: BMI Checker</h3>
+	<ul>
+		<li>Write a program to ask a user to enter a person's height and weight</li>
+		<li>Calculate the BMI as bmi = weight / (height * height)</li>
+		<li>If the BMI is less than 18.5, say "Underweight"</li>
+		<li>If the BMI is less than </li>
+		<li></li>
+		<li></li>
+	</ul>
+</section>
+<section>
+
+	<h3>Exercise: Shopping Discount</h3>
+	<ul>
+		<li>Write a program to calculate the discount based on the total amount of a purchase.</li>
+		<li>Ask the user to enter the total amount</li>
+		<li><b>Less than 2 lakh kyats:</b> No discount</li>
+		<li><b>2 lakh kyats- 4 lakh kyats:</b> 10% discount</li>
+		<li><b>Over 4 lakh kyats:</b> 20% discount</li>
+		<li>Calculate the final amount to pay after discount is subtracted</li>
+	</ul>
+	<pre>
+ask user to input total purchase_amount
+set final_amount to 0
+if amount less than 2 lakh:
+	final_amount = purchase_amount
+else if amount between 2 lakh and 4 lakh:
+	final_amount = purchase_amount - (purchase_amount * 0.1)
+else if amount over 4 lakh
+	final_amount = purchase_amount - (purchase_amount * 0.2)
 	</pre>
 </section>
 <section>
-	<p>How would you extend the code below to give advice to the user on how to dress depending on the weather?</p>
-	<p>The user can enter the weather is <b>cloudy, rainy or snowy</b></p>
-
-	<pre class="python">
-<code data-trim data-noescape>
-
-print("Where do you live?")
-location = input()
-print("What is the weather in ", location, " now?")
-weather = input()
-
-</code>
-
+	<h3>Exercise: Leap Year Checker</h3>
+	<ul>
+		<li>Create a program to ask a user for a year and check if it is a leap year</li>
+		<li>Use the following condition: A year is a leap year if it is divisible by 4, except if it is divisible by 100 (unless they are also divisible by 400)</li>
+		<li>A rough algorithm is described below</li>
+	</ul>
+	<pre>
+ask the user to input a year
+check if the year is divisible by 400
+	then it is a leap year
+else check if the year is divisible by 4
+	check if the year is not divisible by 100
+		then it is a leap year
 	</pre>
-</section>
-<section>
-	<img height="500" src="images/if_and_else.png"></img>
-</section>
-
-<section>
-	<p>When this program is executed, what will be displayed on the screen, if the user enters <b>Python</b> at the prompt?</p>
-
-<pre class="python">
-<code data-trim data-noescape>
-print("What is your favourite programming language?")
-language = input()
-if language == "python":
-	print("Maybe you should try a little Python too")
-else:
-	print("Python is a great language")
-</code>
-</pre>
-</section>
-<section>
-	<p>When this program is executed, what will be displayed on the screen, if the user enters <b>Python</b> at the prompt?</p>
-
-<pre class="python">
-<code data-trim data-noescape>
-print("What is your favourite programming language?")
-language = input()
-if language != python:
-	print("Maybe you should try a little Python too")
-else:
-	print("Python is a great language")
-</code>
-</pre>
-</section>
-
-<section>
-
-	<p>When this program is executed, what will be displayed on the screen, if the user enters <b>Python</b> at the prompt?</p>
-<pre class="python">
-<code data-trim data-noescape>
-print("What is your favourite programming language?")
-language = input()
-if language != "python":
-	print("Maybe you should try a little Python too")
-else:
-	print("Python is a great language")
-</code>
-</pre>
-
-</section>
-
-<section>
-	<img height="500" src="images/elif.png"></img>
-</section>
-
-<section>
-<pre class="python">
-<code data-trim data-noescape>
-number = 13
-if number < 10:
-      print("small")
-if number < 100:
-      print("medium")
-if number < 1000: 
-      print("large")
-</code>
-</section>
-
-<section>
-<pre class="python">
-<code data-trim data-noescape>
-number = 13
-if number < 10:
-      print("small")
-elif number < 100:
-      print("medium")
-elif number < 1000: 
-      print("large")
-</code>
-
-</pre>
-
-</section>
-<section>
-	<img height="500" src="images/repeating_steps.png"></img>
-</section>
-<section>
-	<img height="500" src="images/iteration.png"></img>
-</section>
-<section>
-	<img height="500" src="images/while_loop.png"></img>
-</section>
-<!--
-<section>
-	<img src="images/sixes_and_rolls.png"></img>
 </section>
 -->
 <section>
+	<h5>Task: Printing Numbers</h5>
+	<p>Write a program that prints numbers from 1 to 10 using a while loop.</p>
 	<pre class="python">
 <code data-trim data-noescape>
-print("What is your name?")
-name = input()
-while name != "Paul":
-	print("Try again")
-	name = input()
-print("Welcome, Paul!")
+i = 1
+while i <= 10:
+      print(i)
+      i += 1
 </code>
-	</pre>
+</pre>
+<h5>Exercise</h5>
+<p>Write a python program to count down numbers from 10 to 1 and then say "Blast off!"</p>
 </section>
 <section>
+	<h5>Task: Sum of natural numbers</h5>
+	<p>Calculate the sum of natural numbers using a while loop.</p>
 	<pre class="python">
-<code data-trim data-noescape>
-count = 1
-while count <= 6:
-	print(count)
-	count = count + 1
+	<code data-trim data-noescape>
+n = int(input("Enter a number: "))
+i = 1
+total = 0
+while i <= n:
+    total += i
+    i += 1
+print("The sum is: ", total)
 </code>
+</pre>
+</section>
+<section>
+	<h5>Task: Multiplication Table</h5>
+	<p>Generate a multiplication table for a given number using a while loop.</p>
+	<pre class="python">
+	<code data-trim data-noescape>
+num = int(input("Enter a number: "))
+i = 1
+while i <= 10:
+	print(num, " x ", i , " = ", num * i)
+	i += 1
+</code>
+</pre>
+</section>
+<section>
+	<h5>Task: Password Checker</h5>
+	<p>Keep asking for a password until the user enters the correct one.</p>
+	<pre class="python">
+	<code data-trim data-noescape>
+correct_password = "python123"
+password = ""
+while password != correct_password:
+    password = input("Enter the password: ")
+    if password != correct_password:
+        print("Incorrect password. Try again.")
+print("Access granted!")
+	</code>
 	</pre>
+</section>
 
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-count = 10
-while count >= 1:
-	print(count)
-	count = count - 1
-print("Lift Off!")
-</code>
-	</pre>
 
-</section>
-<section>
-	<p><b>Write a python program using a while loop to start from 1 and skip count over every 3 numbers until it exceeds 19</b></p>
-	<p>So the program should print <b>1, 4, 7, 10, 13, 16, 19</b></p>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-while True:
-    print("This is an infinite loop!")
-</code>
-	</pre>
-</section>
-<section>
-	The <b>break</b> statement is used to exit from the loop manually.
-	<pre class="python">
 
-<code data-trim data-noescape>
-while True:
-    user_input = input("Type 'exit' to stop: ")
-    if user_input == 'exit':
-        break
-
-</code>
-	</pre>
+<!--
+<section>
+	<img src="images/random_tables.png"></img>
 </section>
+-->
 
 			</div>
 		</div>
