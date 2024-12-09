@@ -213,7 +213,6 @@ while True:
 <section>
 	The <b>break</b> statement is used to exit from the loop manually.
 	<pre class="python">
-
 <code data-trim data-noescape>
 while True:
     user_input = input("Type 'exit' to stop: ")
@@ -222,4 +221,86 @@ while True:
 
 </code>
 	</pre>
+</section>
+<section data-markdown>
+	* A **while loop** repeats until a certain condition is not true
+	* A **for loop** is used to repeat a block of code multiple times.
+
+	**Range:** A command that gives you sequence of numbers, e.g. **range(5)** gives numbers 0 to 4.
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+for i in range(5):
+	print(i)
+</code>
+	</pre>
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+for number in range(1, 11):
+    print(number)
+</code>
+	</pre>
+
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+total = 0
+for i in range(1, 21):
+    total += i
+print(total)
+</code>
+	</pre>
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+for i in range(0, 51, 2):
+    print(i)
+</code>
+	</pre>
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+for i in range(1, 11):
+    print("7 x ", i, " = ", 7 * i)
+</code>
+	</pre>
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+for i in range(1, 11):
+    print("x" * i)
+    </code>
+	</pre>
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+
+for i in range(1, 31):
+    if i % 3 == 0 and i % 5 == 0:
+        print(i, " is divisible by 3 and 5")
+    elif i % 3 == 0:
+        print(i, " is divisible by 3")
+    elif i % 5 == 0:
+        print(i, "is divisible by 5")
+	</code>
+</pre>
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+for i in range(1, 11):
+    print(i ** 2)
+</code>
+	</pre>
+</section>
+<section>
+	<img src="images/textbook_total_2.png"></img>
 </section>
