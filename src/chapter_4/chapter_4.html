@@ -299,8 +299,55 @@ for i in range(1, 31):
 for i in range(1, 11):
     print(i ** 2)
 </code>
+
 	</pre>
 </section>
 <section>
 	<img src="images/textbook_total_2.png"></img>
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+color = input("Enter the traffic light color (red, yellow, green): ").lower()
+
+if color == "red":
+    print("Stop!")
+elif color == "yellow":
+    print("Slow down.")
+elif color == "green":
+    print("Go!")
+else:
+    print("Invalid color!")
+</code>
+	</pre>
+
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+total = 0
+
+while True:
+    num = int(input("Enter a number (0 to stop): "))
+    if num == 0:
+        break
+    total += num
+
+print("The total sum is", total)
+
+</code>
+	</pre>
+
+</section>
+<section>
+	<pre class="python">
+<code data-trim data-noescape>
+rows = 10
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+</code>
+</pre>
+
 </section>
