@@ -32,358 +32,152 @@
 			<div class="slides">
 
 <section>
-	<h1>ICT - Year 7</h1>
-	<h6>Chapter 4: Programming, It all adds up</h6>
-	<img src="images/nisa_logo.png"></img>
-	<h6>Naypyitaw International Science Academy</h6>
-</section>
-<section>
-	<img height="500" src="images/if_introduction.png"></img>
-</section>
-<section>
-	<img height="500" src="images/selection_in_python.png"></img>
-</section>
-<section>
-	<img height="500" src="images/selection_operators.png"></img>
-</section>
-<section>
-	<pre class="python">
-	<code data-trim data-noescape>
-	print("What is the best film ever?")
-	film = input()
-	if film != "kung fu panda":
-		print("Oh, I see!")
-	else:
-		print("That is my favourite film too!")
-	</code>
-	</pre>
-
-</section>
-<section>
-	<pre class="python">
-	<code data-trim data-noescape>
-	lucky = 13
-	print("Guess the number")
-	guess = int(input())
-	if guess == lucky:
-		print("Your guess was correct!")
-	else:
-		print("Wrong, keep trying")
-	</code>
-	</pre>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-temperature = float(input("Enter a temperature"))
-if temperature < 10:
-      print("Cold")
-elif temperature <= 25:
-      print("Warm")
-else:
-      print("Hot")
-</code>
-	</pre>
-</section>
-<section>
-	<p>How would you extend the code below to give advice to the user on how to dress depending on the weather?</p>
-	<p>The user can enter the weather is <b>cloudy, rainy or snowy</b></p>
-
-	<pre class="python">
-<code data-trim data-noescape>
-
-print("Where do you live?")
-location = input()
-print("What is the weather in ", location, " now?")
-weather = input()
-
-</code>
-
-	</pre>
-</section>
-<section>
-	<img height="500" src="images/if_and_else.png"></img>
+	<img height="400" src="images/row_1.png"></img>
+	<!--
+		* Rows go across
+		* The numbers on the left side of the spreadsheet identify the rows
+	-->
 </section>
 
 <section>
-	<p>When this program is executed, what will be displayed on the screen, if the user enters <b>Python</b> at the prompt?</p>
+	<img height="400" src="images/column_1.png"></img>
 
-<pre class="python">
-<code data-trim data-noescape>
-print("What is your favourite programming language?")
-language = input()
-if language == "python":
-	print("Maybe you should try a little Python too")
-else:
-	print("Python is a great language")
-</code>
-</pre>
+	<!--
+		* Columns go down
+		* The letters at the top of the spreadsheet identify the column
+	-->
 </section>
 <section>
-	<p>When this program is executed, what will be displayed on the screen, if the user enters <b>Python</b> at the prompt?</p>
+	<img height="400" src="images/cell_reference.png"></img>
+	<!--
 
-<pre class="python">
-<code data-trim data-noescape>
-print("What is your favourite programming language?")
-language = input()
-if language != python:
-	print("Maybe you should try a little Python too")
-else:
-	print("Python is a great language")
-</code>
-</pre>
-</section>
+		A cell reference is made of a Column (Letter) followed by a Row (Number)
 
-<section>
-
-	<p>When this program is executed, what will be displayed on the screen, if the user enters <b>Python</b> at the prompt?</p>
-<pre class="python">
-<code data-trim data-noescape>
-print("What is your favourite programming language?")
-language = input()
-if language != "python":
-	print("Maybe you should try a little Python too")
-else:
-	print("Python is a great language")
-</code>
-</pre>
-
-</section>
-
-<section>
-	<img height="500" src="images/elif.png"></img>
-</section>
-
-<section>
-<pre class="python">
-<code data-trim data-noescape>
-number = 13
-if number < 10:
-      print("small")
-if number < 100:
-      print("medium")
-if number < 1000: 
-      print("large")
-</code>
-</section>
-
-<section>
-<pre class="python">
-<code data-trim data-noescape>
-number = 13
-if number < 10:
-      print("small")
-elif number < 100:
-      print("medium")
-elif number < 1000: 
-      print("large")
-</code>
-
-</pre>
-
+		It provides a coordinate of where a cell is in a spreadsheet.
+	-->
 </section>
 <section>
-	<img height="500" src="images/repeating_steps.png"></img>
+<img height="400" src="images/range_1.png"></img>
+<!--
+
+	Sometimes you need to identify a group of cells at once.
+-->
 </section>
 <section>
-	<img height="500" src="images/iteration.png"></img>
+	<img height="400" src="images/range_2.png"></img>
+
+</section>
+<section data-markdown>
+	A formula is needed to do a calculation and must start with an = sign.
+
+	* =17+31
+	* =8*5
+	* =15/3
+
+	You can also use formula to do calculation on cells.
+
+	* =C20*E20
+	* =A15+A17
+	* =D12+F17
 </section>
 <section>
-	<img height="500" src="images/while_loop.png"></img>
+	<h3>Task 1</h3>
+	<img height="350" src="images/excel_task_1.png"></img>
+
 </section>
 <!--
 <section>
-	<img src="images/sixes_and_rolls.png"></img>
+	In a Spreadsheet how would you write a formula for 179 + 56?
+
+	In a Spreadsheet how would you write a formula for 764 divided by 4?
 </section>
 -->
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-print("What is your name?")
-name = input()
-while name != "Paul":
-	print("Try again")
-	name = input()
-print("Welcome, Paul!")
-</code>
-	</pre>
+<section data-markdown>
+	Functions allow you to work on a lot of data at once
+	* **SUM:** Allows you to add many items
+	* **COUNTA:** Counts how many filled up cells are there
+	* **MAX:** Finds the highest value
+	* **MIN:** Finds the lowest value
+	* **AVERAGE:** Finds the average value of a set of data
 </section>
 <section>
-	<pre class="python">
-<code data-trim data-noescape>
-count = 1
-while count <= 6:
-	print(count)
-	count = count + 1
-</code>
-	</pre>
+	<img height="400" src="images/sum_1.png"></img>
+	<p>=SUM(D4:D11)</p>
+</section>
 
-</section>
 <section>
-	<pre class="python">
-<code data-trim data-noescape>
-count = 10
-while count >= 1:
-	print(count)
-	count = count - 1
-print("Lift Off!")
-</code>
-	</pre>
-
-</section>
-<section>
-	<p><b>Write a python program using a while loop to start from 1 and skip count over every 3 numbers until it exceeds 19</b></p>
-	<p>So the program should print <b>1, 4, 7, 10, 13, 16, 19</b></p>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-while True:
-    print("This is an infinite loop!")
-</code>
-	</pre>
-</section>
-<section>
-	The <b>break</b> statement is used to exit from the loop manually.
-	<pre class="python">
-<code data-trim data-noescape>
-while True:
-    user_input = input("Type 'exit' to stop: ")
-    if user_input == 'exit':
-        break
-
-</code>
-	</pre>
+	<h3>Task 2</h3>
+	<img height="350" src="images/task_2.png"></img>
+	<ul>
+		<li>Find the total number of medals won by each country</li>
+		<li>Find the average number of gold, silver and bronze medals won by the countries</li>
+		<li>Find the maximum number of medals won by a country</li>
+	</ul>
 </section>
 <section data-markdown>
-	* A **while loop** repeats until a certain condition is not true
-	* A **for loop** is used to repeat a block of code multiple times.
+	* **Sort:** Allows you to sort items A to Z or Z to A
+	* **Filter:** Allows you to easily find data
+	* **COUNTIF:** Find how many of a certain value there are 
+	* **IF:** Analyse data for a TRUE or FALSE as two outcomes
+</section>
+<section>
+	<h3>Task 3</h3>
+	<img src="images/excel_task_3.png"></img>
+	<ul>
+		<li>Find the average using the AVERAGE function</li>
+		<li>In the "Passed" column, use the IF function to check if the student scored more than 60 as <b>=IF(C2 >=60, "yes", "no")</b></li>
+		<li>To find the total number of students who passed use COUNTIF as <b>=COUNTIF(C3:C9, ">=60")</b></li>
+	</ul>
+</section>
+<section>
+	<h3>Task 3</h3>
+	<p><img height="400" src="images/sort_range.png"></img></p>
+		<ul>
+		<li>Highlight all the cells and right click</li>
+		<li>In <b>More cell actions</b>, click on <b>Sort Range</b> and sort according to the marks column.</li>
+	</ul>
+</section>
+<!--
+<section>
+	What is data?
 
-	**Range:** A command that gives you sequence of numbers, e.g. **range(5)** gives numbers 0 to 4.
+	Data is facts and figures
+	Examples of data:
+	* Only 12 out of 20 students achieved a B grade or higher
+	* There are 10 girls in Class 9S
+	* We had 60% rainfall today at 3pm
+	* Charts
 </section>
 <section>
-	<pre class="python">
-<code data-trim data-noescape>
-for i in range(5):
-	print(i)
-</code>
-	</pre>
+	<img src="images/chart_1.png"></img>
 </section>
 <section>
-	<pre class="python">
-<code data-trim data-noescape>
-for number in range(1, 11):
-    print(number)
-</code>
-	</pre>
+	When data is organised to have some meaning to it, it becomes information.
 
+	Examples include:
+	Receipts
+	Report Cards
+	Salary slip
 </section>
 <section>
-	<pre class="python">
-<code data-trim data-noescape>
-total = 0
-for i in range(1, 21):
-    total += i
-print(total)
-</code>
-	</pre>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-for i in range(0, 51, 2):
-    print(i)
-</code>
-	</pre>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-for i in range(1, 11):
-    print("7 x ", i, " = ", 7 * i)
-</code>
-	</pre>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-for i in range(1, 11):
-    print("x" * i)
-    </code>
-	</pre>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
 
-for i in range(1, 31):
-    if i % 3 == 0 and i % 5 == 0:
-        print(i, " is divisible by 3 and 5")
-    elif i % 3 == 0:
-        print(i, " is divisible by 3")
-    elif i % 5 == 0:
-        print(i, "is divisible by 5")
-	</code>
-</pre>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-for i in range(1, 11):
-    print(i ** 2)
-</code>
+	A primary source of data is a source you have collected yourself
+	A secondary source of data is a source which you have found and decided to use
+	If a secondary source is used, it must always be referenced in your work
 
-	</pre>
-</section>
-<section>
-	<img src="images/textbook_total_2.png"></img>
-</section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-color = input("Enter the traffic light color (red, yellow, green): ").lower()
-
-if color == "red":
-    print("Stop!")
-elif color == "yellow":
-    print("Slow down.")
-elif color == "green":
-    print("Go!")
-else:
-    print("Invalid color!")
-</code>
-	</pre>
+	Which one of these is an example of a primary source?
+	Interview
+	Newspaper
+	Radio show
 
 </section>
 <section>
-	<pre class="python">
-<code data-trim data-noescape>
-total = 0
 
-while True:
-    num = int(input("Enter a number (0 to stop): "))
-    if num == 0:
-        break
-    total += num
+	Creating charts
 
-print("The total sum is", total)
-
-</code>
-	</pre>
-
+	types_of_charts.png
 </section>
-<section>
-	<pre class="python">
-<code data-trim data-noescape>
-rows = 10
-for i in range(1, rows + 1):
-    for j in range(1, i + 1):
-        print(j, end="")
-    print()
-</code>
-</pre>
-
-</section>
+-->
 
 			</div>
 		</div>
